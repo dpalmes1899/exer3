@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                 box9Text, box10Text,box11Text, box12Text, box13Text,
                 box14Text, box15Text,box16Text, box17Text, box18Text,
                 box19Text, box20Text,box21Text, box22Text, box23Text,
-                box24Text,retryButton
+                box24Text
                 )
 
         for (item in clickableViews) {

@@ -87,6 +87,8 @@ class MainActivity : AppCompatActivity() {
         for (item in clickableViews) {
             item.setOnClickListener { makeColored(it) }
         }
+
+        retryButton.setOnClickListener{retry(clickableViews)}
     }
 
     /**
@@ -113,6 +115,12 @@ class MainActivity : AppCompatActivity() {
             //R.id.retry_button -> box_five_text.setBackgroundResource(R.color.my_green)
 
             else -> view.setBackgroundColor(Color.LTGRAY)
+        }
+    }
+
+    private fun retry(clickableViews: List<View>){
+        for (item in clickableViews) {
+            item.setBackgroundColor(Color.WHITE)
         }
     }
 }
